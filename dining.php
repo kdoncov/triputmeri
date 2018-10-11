@@ -36,7 +36,7 @@
         <img class = "wrap_100"  src="images/pillow.jpg" alt="bedding">
         <div class="caption-m">
             <h1>PILLOWS & DUVETS</h1><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
             <p>Lorem.</p>
         </div>
     </div>
