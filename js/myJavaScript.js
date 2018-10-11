@@ -2,41 +2,6 @@
 
 $(document).ready(function(){
 
-// =========load more pictures on scroll (-- Ajax Request-- )===========
- 
-/* var countBath = 8;
-$(window).scroll(function(){
-    var wrapBath = document.getElementById('wrapDiv-bath');
-    var contentHeightBath = wrapBath.offsetHeight + 350;
-    var yOffsetBath = window.pageYOffset;
-    var yBath = yOffsetBath + window.innerHeight;
-    if (yBath >= contentHeightBath){
-        countBath = countBath + 8;
-        $("#wrapDiv-bath").load("includes/insertImage.inc.php", {
-            newCount:  countBath,
-            newTable: "bath_img"
-        });
-    }
-
-}); 
-
-
-var countPill = 8;
-$(window).scroll(function(){
-    var wrap = document.getElementById('wrapDiv-pill');
-    var contentHeight = wrap.offsetHeight + 350;
-    var yOffset = window.pageYOffset;
-    var y = yOffset + window.innerHeight;
-    if (y >= contentHeight){
-        countPill = countPill + 8;
-        $("#wrapDiv-pill").load("includes/insertImage.inc.php", {
-            newCount:  countPill,
-            newTable: "pillows_img"
-        });
-    }
-
-}); */
-
 //===========================================================================
 
 var timer;
@@ -105,7 +70,7 @@ function mySlide(){
 }
 mySlide();
     
-//footer ***radi!***
+//footer ***radi***
 
 var TfooterShow;
 

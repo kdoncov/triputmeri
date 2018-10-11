@@ -22,7 +22,7 @@
         $conn = mysqli_connect("localhost","root","") or die("cannot connect to database");
         $db = mysqli_select_db($conn, "triput_meri") or die("cannot connect to database");
         $result = mysqli_query($conn, "SELECT * FROM product WHERE UserDeleted IS NULL AND IsPublished = 1 ORDER BY PublishedOn DESC ");
-        $monht_ago = strtotime(date('Y/m/d H:i:s')) - 97200; // dva sata 
+        $monht_ago = strtotime(date('Y/m/d H:i:s')) - (86400 * 30);  
         $bool = true;
         while ($row = mysqli_fetch_array($result)) {
             $x = strtotime($row['PublishedOn']);
@@ -50,19 +50,6 @@
                 include("includes/footer.inc.php");
             ?>
     </footer>
-    <!-- <script>
-        $(document).ready(function(){  
-
-        if(<?php echo $bool; ?>){
-            $('.ajax-hide').css("display", "none");
-            $('section').load("includes/info.php")
-        }
-
-
-
-        });
-
-        
-    </script> -->
+    
 </body>
 </html>

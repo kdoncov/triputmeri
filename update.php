@@ -56,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         PublishedOn = '$published_on',
         IsPublished = '$publish'
     WHERE Id=$temp");
-    Print '<script>location.assign("editProduct.php?id='.$temp.'");</script>';
+    echo '<script>location.assign("editProduct.php?id='.$temp.'");</script>';
 
     }
 ?>

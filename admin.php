@@ -52,24 +52,7 @@ else {
             $sql = mysqli_query($conn, "SELECT * FROM images WHERE ProductId ='$tempProdId'AND IsCover = 1"); 
             $rowId = mysqli_fetch_array($sql);
             $coverImgPath = $rowId['ImagePath'];
-            /* if (!empty($_GET['id']) && $_GET['id']==$row['Id']){     //ovo $_GET['id'] se setuje kad se klikne edit
-                echo    '<form action="update.php?id='.$_GET['id'].'" method="POST">
-                        <tr>
-                        <td><input type="text" name="name" value='. $row['Name'].'>
-                        <td><textarea  name="description" rows="4" cols="10%" value='. $row['Description'] .'></textarea>
-                        <td><input type="text" name="material" value='. $row['Material'] .'>
-                        <td><input type="text" name="category" value='. $row['Category'] .'>
-                        <td><input type="text" name="subcategory" value='. $row['Subcategory'] .'>
-                        <td><input type="date" name="on_sale_from" value='. $row['OnSaleFromDate'] .'>
-                        <td><input type="date" name="on_sale_to" value='. $row['OnSaleToDate'] .'>
-                        <td><input type="number" name="price" value='. $row['Price'] .'>
-                        <td><input type="number" name="numb_of_peaces" value='. $row['NumberOfPeaces'] .'>
-                        <td><a href="addPhotos.php?id=' .$row['Id'].'"><img src='.$row['ImgPath'].' style="width:80px"/></a></td>
-                        <td><input type="submit" value="potvrdi">
-                        <td><a href="#" onclick="myFunction('.$row['Id'].')"><img src="images/drop.png" ></a></td>
-                        </tr>
-                        </form>';
-            } else { */
+            
                 if($row['IsPublished']==1){
                     $publish = 'DA';
                 } else {

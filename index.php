@@ -64,8 +64,7 @@
         ?>
     </footer>
 
-    <script> // srediti kod
-    
+    <script> 
         
         var slike = document.getElementsByClassName("image");
         if(slike.length < 4){
@@ -77,40 +76,39 @@
                 var a = 0;
                 var b = 4; 
             }
+
         for (i=0; i<slike.length; i++){
-            slike[i].style.display = "none";}
+            slike[i].style.display = "none";
+        }
         for (i=a; i<b; i++){
-            slike[i].style.display = "inline-block";}
+            slike[i].style.display = "inline-block";
+        }
+
             var index = 0;
 
             if(slike.length < 5){
                 document.getElementById("next").style.display = "none";
                 document.getElementById("prev").style.display = "none";
-
             }
         function prevNextSlides(n) {
-            
             a += n;
             b += n;
             if (a<0){
                 a = 0;
                 b = 4;
             }
-            if (b > slike.length) {
+            if (b > slike.length){
                 a = slike.length-4;
                 b = slike.length;        
             }
             for (i=0; i<slike.length; i++){
-                slike[i].style.display = "none";}
-            for (i=a; i<b; i++){
-                slike[i].style.display = "inline-block";}
+                slike[i].style.display = "none";
             }
+            for (i=a; i<b; i++){
+                slike[i].style.display = "inline-block";
+            }
+        }
     
-
-
-
-
-
     </script>
 </body>
 </html>

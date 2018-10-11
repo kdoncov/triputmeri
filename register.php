@@ -53,11 +53,11 @@
                 $table_name = $row['Name'];
                 $table_email = $row['Email'];
                     if($name == $table_name){
-                        Print '<script>alert("username has been taken!");</script>';
+                        echo '<script>alert("username has been taken!");</script>';
                     }
                     elseif($email == $table_email) {
-                        Print '<script>alert("email has been taken!");</script>';
-                        /* Print '<script>location.assign("register.php");</script>'; */
+                        echo '<script>alert("email has been taken!");</script>';
+                        /* echo '<script>location.assign("register.php");</script>'; */
                     } 
             } 
 
@@ -69,8 +69,8 @@
         else {
             $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
             mysqli_query($conn, "INSERT INTO customer (Name, Email, Password) VALUES ('$name', '$email', '$hashedPwd')");
-            Print '<script>alert("Succesfully Registered!");</script>';
-            Print '<script>location.assign("login.php");</script>';
+            echo '<script>alert("Succesfully Registered!");</script>';
+            echo '<script>location.assign("login.php");</script>';
         }
     }
     ?>

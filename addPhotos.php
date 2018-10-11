@@ -32,7 +32,7 @@
                 if(mysqli_num_rows($result) == 0){
                     mysqli_query($conn, "UPDATE images SET IsCover = 1 WHERE ProductId = '$temp'");
                 } 
-            }  //pitati anu--ok
+            }  
         } 
         else 
         {  

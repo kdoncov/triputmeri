@@ -6,9 +6,9 @@
     $result = mysqli_query($conn, "SELECT * FROM $myTable LIMIT $myCount");
     while ($row = mysqli_fetch_array($result))
     {
-        print '<div class = "image">';
-        print '<a href="addToCart.php?id='.$row['Id'].'"><img src="'.$row["ImgPath"].'" alt="primer4"></a>';
-        print '<span class="caption">'.$row["Name"].'</span>';
-        print '</div>';
+        echo '<div class = "image">';
+        echo '<a href="addToCart.php?id='.$row['Id'].'"><img src="'.$row["ImgPath"].'" alt="primer4"></a>';
+        echo '<span class="caption">'.$row["Name"].'</span>';
+        echo '</div>';
     }
 ?>
